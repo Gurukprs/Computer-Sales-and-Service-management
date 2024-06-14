@@ -27,6 +27,7 @@ class App:
         self.conn = connect_to_db()
         self.c1 = self.conn.cursor() if self.conn else None
         self.root.geometry("600x600")
+        self.root.title("Computer Sales and Service")
         self.style = ttk.Style()
         self.configure_styles()
         self.draw_turtle_image()
